@@ -1,0 +1,292 @@
+  Base styles */ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html,
+  body {
+    height: 100%;
+  }
+
+  .wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Hero section */
+  .hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: radial-gradient(circle, #000000 0%, #111111 100%);
+    position: relative;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+    color: #ffffff;
+  }
+
+  .bg-text {
+    color: #00ff41;
+    font-weight: bold;
+  }
+
+  .subtitle {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: white;
+  }
+
+  .cta-button {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 14px 32px;
+    background-color: #00ff41;
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 10px #00ff41;
+  }
+
+  .cta-button:hover {
+    background-color: #00cc33;
+    box-shadow: 0 0 20px #00ff41;
+  }
+
+  /* Description section */
+  .ctf-info {
+    display: flex;
+    text-align: center;
+    gap: 40px;
+    padding: 80px 100px;
+    background: radial-gradient(circle, #000000 0%, #111111 100%);
+  }
+
+  .ctf-info h1 {
+    margin-bottom: 40px;
+    font-size: 2rem;
+  }
+
+  .ctf-info h1 span {
+    color: #00ff41;
+  }
+
+  .description {
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .description span {
+    color: #00ff41;
+  }
+
+  /* Features section */
+  .features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 80px 20px;
+    background: radial-gradient(circle, #000000 0%, #111111 100%);
+    position: relative;
+  }
+
+  .feature {
+    max-width: 400px;
+    text-align: center;
+    
+    
+  }
+
+  .feature h2 {
+    color: #00ff41;
+    margin-bottom: 10px;
+  }
+
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000000;
+    color: #666666;
+    font-size: 0.9rem;
+  }
+
+  .catalog-header {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #0d0d0d;
+    color: #00ff41;
+  }
+
+  .catalog-header p {
+    color: #ccc;
+    margin-top: 10px;
+  }
+
+  /*catalog.html*/
+  /* Общи настройки */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #fff;
+  }
+
+  /* Заглавие на каталога */
+  .catalog-header {
+    position: relative;
+    text-align: center;
+    padding: 40px 20px;
+    background: black;
+  }
+
+  .catalog-header img {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    max-width: 80px;
+    /* регулирай размера */
+  }
+
+  .catalog-header h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+    margin: 0;
+  }
+
+
+  /* Каталог */
+  .ctf-catalog {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 60px 20px;
+    
+  }
+
+  .ctf-card {
+    background: radial-gradient(circle, #000000 0%, #111111 100%);
+    border-radius: 16px;
+    width: 280px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 8px 30px rgba(0, 255, 65, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .ctf-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 40px rgba(0, 255, 65, 0.3);
+  }
+
+  .ctf-card h2 {
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+  }
+
+  .ctf-card p {
+    color: #ddd;
+    margin-bottom: 20px;
+    font-size: 1rem;
+  }
+
+  .ctf-card img.ctf-image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 15px rgba(0, 255, 65, 0.1);
+  }
+
+  .ctf-card .download-btn {
+    display: inline-block;
+    background-color: #00ff41;
+    padding: 12px 24px;
+    color: #121212;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+    font-size: 1rem;
+  }
+
+  .ctf-card .download-btn:hover {
+    background-color: #00cc33;
+    transform: scale(1.05);
+  }
+
+
+  /* Респонсивен дизайн - за малки екрани */
+  @media (max-width: 768px) {
+    .ctf-catalog {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .ctf-card {
+      width: 90%;
+    }
+  }
+
+  .walkthrough {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+    height: 100%;
+    color: #ffffff;
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+
+  .walkthrough h2{
+    text-align: center;
+  }
+  .walkthrough p {
+    margin-top: 1rem;
+  }
+
+  .walkthrough a{
+    text-decoration: none;
+    color: black;
+  }
+  .walkthrough span{
+    color: #00ff41;
+  }
+
+  .noSelect{
+    display: inline-block;
+    padding: 14px 32px;
+    background-color: #00ff41;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 10px #00ff41;
+  }
+
+  .noSelect:hover{
+    background-color: #00cc33;
+    box-shadow: 0 0 20px #00ff41;
+  }
