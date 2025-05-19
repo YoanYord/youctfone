@@ -4,6 +4,9 @@ Welcome to **YouCTFOne**, a Bulgarian-language Capture The Flag (CTF) platform b
 
 ---
 
+# CTF Platform is live at:
+(https://yoanyord.github.io/youctfone/)
+---
 ## 📦 What’s Inside?
 
 This project contains **two custom-made vulnerable machines** with escalating levels of difficulty. Each is designed to simulate real-world attack scenarios.
