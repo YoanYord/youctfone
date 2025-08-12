@@ -24,6 +24,10 @@ This project contains **two custom-made vulnerable machines** with escalating le
 - SSH access with credentials from the DB.
 - Kernel privilege escalation via **DirtyPipe** (`CVE-2022-0847`).
 
+### Forensics Challenge (Beginner-Friendly)
+- Suspicious file with mismatched extension (.zip.exe) found.
+- Investigation reveals the file is actually an image with embedded hidden data..
+- Participants must identify the true file type, inspect the file headers, and extract the concealed message from within.
 ---
 
 ## 📚 Walkthroughs (Bulgarian)
